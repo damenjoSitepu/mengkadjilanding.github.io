@@ -1,0 +1,325 @@
+$mengkadji : #E50014;
+$defaultColor : rgb(221, 221, 221);
+
+.lightSaber {
+        display: none;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.74);
+}
+
+// File Only For Navbar
+.m-navbar {
+    padding: 0 5%;
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    grid-template-columns: 1.2fr 5fr;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: -2px -2px 5px 3px rgba(163, 163, 163, 0.233);
+
+    .m-navbar-logo {
+        a {
+            text-decoration: none;
+            font-size: 40px;
+            line-height: 80px;
+            color: $mengkadji;
+            font-weight: bold;
+        }
+    }
+
+    .m-navbar-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        a {
+            position: relative;
+            display: block;
+
+            text-decoration: none;
+            font-size: 19px;
+            line-height: 80px;
+            color: rgba(20, 19, 20, 0.37);
+            font-weight: bold;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 25%;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: $mengkadji;
+            }
+
+            &:hover {
+                transition: .5s ease;
+                color: $mengkadji;
+            }
+        }
+    }
+
+    .m-navbar-responsive {
+        display: none;
+    }
+
+    .m-navbar-responsive-list {
+        padding: 50px 10px 40px 10px;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        background-color: #fff;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: -2px -2px 5px 3px rgba(116, 116, 116, 0.116);
+
+        .m-navbar-responsive-list-contain {
+            position: relative;
+        }
+
+        .m-navbar-responsive-list-close {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 0;
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            width: 60px;
+            height: 60px;
+            box-sizing: border-box;
+            border: 5px solid rgba(0,0,0,0.74);
+            border-radius: 50%;
+
+            a {
+                display: block;
+                line-height: 55px;
+                font-size: 30px;
+                color: $mengkadji;
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        small {
+            text-align: center;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(124, 124, 124);
+        }
+
+        .m-navbar-responsive-list-1 {
+            padding: 15px 0 15px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+            
+            a {
+                margin-bottom: 20px;
+                width: 45%;
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: bold;
+                display: block;
+                color: rgb(56, 56, 56);
+
+                i {
+                    color: $mengkadji;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        .m-navbar-responsive-list-line {
+            padding-top: 30px;
+            position: relative;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 5px;
+                top:0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                height: 4px;
+                width: 100%;
+                background-color: rgb(236, 236, 236);
+            }
+        }
+    }
+
+}
+
+// Animasi menu
+.menulist {
+    &::before {
+        animation: .5s menulist linear forwards !important;
+    }
+}
+
+@keyframes menulist {
+    0% {
+        left: 0;
+        width: 0%;
+    }
+
+    50% {
+        left: 50%;
+        width: 50%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
+}
+// End File Only For Navbar
+
+
+
+// Responsive Breakpoint
+
+// For Big Laptop ( 1800 Px ++ )
+@media only screen and (min-width: 1800px){
+    // File Only For Navbar
+    .m-navbar {
+        max-width: 1800px;
+        margin: auto;
+
+        .m-navbar-logo {
+            a {
+                font-size: 50px;
+            }
+        }
+
+        .m-navbar-list {
+            a {
+                font-size: 23px;
+                text-decoration: none;
+
+                &::before {
+
+                    bottom: 20%;
+                    height: 3px;
+                }
+            }
+        }
+    }
+    // End File Only For Navbar
+}
+// End For Big Laptop ( 1800 Px ++ )
+
+
+
+// For Small Laptop ( 1200 Px )
+@media only screen and (max-width: 1200px){
+    // File Only For Navbar
+    .m-navbar {
+        .m-navbar-logo {
+            a {
+                font-size: 35px;
+            }
+        }
+
+        .m-navbar-list {
+            a {
+                font-size: 17px;
+                text-decoration: none;
+            }
+        }
+    }
+    // End File Only For Navbar
+}
+// End For Small Laptop ( 1024 Px )
+
+
+
+// For Table ( 900 Px )
+@media only screen and (max-width: 900px){
+    // File Only For Navbar
+    .m-navbar {
+        grid-template-columns: repeat(2,1fr);
+        height: 70px;
+
+        .m-navbar-logo {
+            a {
+                font-size: 35px;
+                line-height: 70px;
+            }
+        }
+
+        .m-navbar-list {
+            display: none;
+        }
+
+        .m-navbar-responsive-list {
+            display: none;
+        }
+
+        .m-navbar-responsive {
+            padding-top: 5px;
+            align-self: center;
+            justify-self: end;
+            display: block;
+            font-size: 30px;
+
+            a {
+                color:rgba(20, 19, 20, 0.37);
+            }
+        }
+
+        
+    }
+    // End File Only For Navbar
+}
+// End For Tablet ( 768 Px )
+
+
+
+// For Mobile ( 600 Px ) 
+@media only screen and (max-width: 600px){
+    // File Only For Navbar
+    .m-navbar {
+        grid-template-columns: repeat(2,1fr);
+        height: 60px;
+
+        .m-navbar-logo {
+            a {
+                font-size: 30px;
+                line-height: 60px;
+            }
+        }
+
+        .m-navbar-responsive {
+            font-size: 25px;
+        }
+    }
+    // End File Only For Navbar
+}
+// End For Mobile ( 600 Px )

@@ -1,0 +1,296 @@
+.lightSaber {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.m-navbar {
+  padding: 0 5%;
+  display: -ms-grid;
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  -ms-grid-columns: 1.2fr 5fr;
+      grid-template-columns: 1.2fr 5fr;
+  height: 80px;
+  background-color: #fff;
+  -webkit-box-shadow: -2px -2px 5px 3px rgba(163, 163, 163, 0.233);
+          box-shadow: -2px -2px 5px 3px rgba(163, 163, 163, 0.233);
+}
+
+.m-navbar .m-navbar-logo a {
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 80px;
+  color: #E50014;
+  font-weight: bold;
+}
+
+.m-navbar .m-navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.m-navbar .m-navbar-list a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 80px;
+  color: rgba(20, 19, 20, 0.37);
+  font-weight: bold;
+}
+
+.m-navbar .m-navbar-list a::before {
+  content: '';
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #E50014;
+}
+
+.m-navbar .m-navbar-list a:hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #E50014;
+}
+
+.m-navbar .m-navbar-responsive {
+  display: none;
+}
+
+.m-navbar .m-navbar-responsive-list {
+  padding: 50px 10px 40px 10px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: -2px -2px 5px 3px rgba(116, 116, 116, 0.116);
+          box-shadow: -2px -2px 5px 3px rgba(116, 116, 116, 0.116);
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-contain {
+  position: relative;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-close {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 0;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid rgba(0, 0, 0, 0.74);
+  border-radius: 50%;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-close a {
+  display: block;
+  line-height: 55px;
+  font-size: 30px;
+  color: #E50014;
+}
+
+.m-navbar .m-navbar-responsive-list h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.m-navbar .m-navbar-responsive-list small {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #7c7c7c;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-1 {
+  padding: 15px 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-1 a {
+  margin-bottom: 20px;
+  width: 45%;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+  color: #383838;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-1 a i {
+  color: #E50014;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-1 a p {
+  font-size: 16px;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-line {
+  padding-top: 30px;
+  position: relative;
+}
+
+.m-navbar .m-navbar-responsive-list .m-navbar-responsive-list-line::before {
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 4px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.menulist::before {
+  -webkit-animation: .5s menulist linear forwards !important;
+          animation: .5s menulist linear forwards !important;
+}
+
+@-webkit-keyframes menulist {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 50%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes menulist {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 50%;
+    width: 50%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .m-navbar {
+    max-width: 1800px;
+    margin: auto;
+  }
+  .m-navbar .m-navbar-logo a {
+    font-size: 50px;
+  }
+  .m-navbar .m-navbar-list a {
+    font-size: 23px;
+    text-decoration: none;
+  }
+  .m-navbar .m-navbar-list a::before {
+    bottom: 20%;
+    height: 3px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .m-navbar .m-navbar-logo a {
+    font-size: 35px;
+  }
+  .m-navbar .m-navbar-list a {
+    font-size: 17px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .m-navbar {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    height: 70px;
+  }
+  .m-navbar .m-navbar-logo a {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  .m-navbar .m-navbar-list {
+    display: none;
+  }
+  .m-navbar .m-navbar-responsive-list {
+    display: none;
+  }
+  .m-navbar .m-navbar-responsive {
+    padding-top: 5px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    display: block;
+    font-size: 30px;
+  }
+  .m-navbar .m-navbar-responsive a {
+    color: rgba(20, 19, 20, 0.37);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .m-navbar {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    height: 60px;
+  }
+  .m-navbar .m-navbar-logo a {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .m-navbar .m-navbar-responsive {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
