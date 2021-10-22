@@ -45,6 +45,7 @@ $defaultColor : rgb(221, 221, 221);
         }
 
         a {
+            transition: .3s ease;
             padding: 8px;
             box-sizing: border-box;
             text-decoration: none;
@@ -60,7 +61,7 @@ $defaultColor : rgb(221, 221, 221);
                 border: 2px solid $mengkadji;
                 background-color: $mengkadji;
                 color: #fff;
-                transition: .5s ease;
+                transition: .3s ease;
                 transform: scale(1.1);
             }
         }
@@ -213,7 +214,7 @@ $defaultColor : rgb(221, 221, 221);
                 &:hover {
                     color: #fff;
                     background-color: $mengkadji;
-                    transform: scale(1.2);
+                    transform: scale(1.05);
                     transition: .3s ease;
                 }
 
@@ -304,7 +305,7 @@ $defaultColor : rgb(221, 221, 221);
                 }
 
                 50% {
-                    transform: scale(1.2);
+                    transform: scale(1.05);
                 }
                 
                 100% {
@@ -587,7 +588,7 @@ $defaultColor : rgb(221, 221, 221);
                     &:hover {
                         color: #fff;
                         background-color: $mengkadji;
-                        transform: scale(1.2);
+                        transform: scale(1.05);
                         transition: .3s linear;
                     }
 
