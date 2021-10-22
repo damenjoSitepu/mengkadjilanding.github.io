@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
           box-shadow: 2px 2px 20px rgba(31, 31, 31, 0.514);
 }
 
-.corner-icon::before {
+.corner-icon:hover::before {
   content: '';
   position: absolute;
   -webkit-transform: scale(1);

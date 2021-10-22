@@ -57,20 +57,24 @@ body {
     line-height: 80px;
     box-shadow: 2px 2px 20px rgba(31, 31, 31, 0.514);
 
-    &::before {
-        content: '';
-        position: absolute;
-        transform: scale(1);
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        border: 2px solid $mengkadji;
-        border-radius: 50%;
-        box-sizing: border-box;
-        animation: 1s signal-corner linear infinite;
+    &:hover {
+        &::before {
+            content: '';
+            position: absolute;
+            transform: scale(1);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            border: 2px solid $mengkadji;
+            border-radius: 50%;
+            box-sizing: border-box;
+            animation: 1s signal-corner linear infinite;
+        }
     }
+
+   
 }
 
 @keyframes signal-corner {
