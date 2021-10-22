@@ -13,7 +13,7 @@
 
 <body>
     <div class="lightSaber"></div>
-    <div class="loadSaber">
+    <!-- <div class="loadSaber">
         <div class="loadSabers">
             <h2>mengkadji.</h2>
             <div class="sabers">
@@ -28,7 +28,7 @@
                 <div class="saber"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <a href="" class="corner-icon">
         <i class="fas fa-arrow-alt-circle-up"></i>
@@ -94,7 +94,7 @@
     <!-- Ending Mengkadji Navbar -->
 
     <!-- Container -->
-    <div class="m-container">
+    <div class="m-container" id="container-release">
         <!-- Bagian Awal -->
         <div class="m-starter">
             <div class="m-starter-body">
@@ -114,96 +114,111 @@
             <div class="m-program-category-spawn">
                 <a href="" class="choosen" data-category="m-program-category-1">
                     <i class="fas fa-chalkboard"></i>
+                    <span>
+                        <p>Digital E-Learning</p>
+                    </span>
                 </a>
                 <a href="" data-category="m-program-category-2">
                     <i class="fas fa-business-time"></i>
+                    <span>
+                        <p>Business Campaign</p>
+                    </span>
                 </a>
                 <a href="" data-category="m-program-category-3">
                     <i class="fas fa-people-arrows"></i>
+                    <span>
+                        <p>Social Campaign</p>
+                    </span>
                 </a>
                 <a href="" data-category="m-program-category-4">
                     <i class="fas fa-tasks"></i>
+                    <span>
+                        <p>All Program's Here</p>
+                    </span>
                 </a>
             </div>
 
-            <div class="m-program-category-contents m-program-category-1">
-                <div class="m-program-category-content">
-                    <div class="m-program-category-text">
-                        <h1>Digital E-Learning</h1>
+            <div class="m-program-category-container">
+                <div class="m-program-category-contents m-program-category-1">
+                    <div class="m-program-category-content">
+                        <div class="m-program-category-text">
+                            <h1>Digital E-Learning</h1>
 
-                        <p>Gather round and learn with digital marketing experts and learn all about the nooks and
-                            crannies
-                            of the digital world. Our topics range from A-Z, from the basic to the complex strategies.
-                            Good
-                            news — anyone can join!</p>
+                            <p>Gather round and learn with digital marketing experts and learn all about the nooks and
+                                crannies
+                                of the digital world. Our topics range from A-Z, from the basic to the complex
+                                strategies.
+                                Good
+                                news — anyone can join!</p>
 
-                        <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
-                    </div>
+                            <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        </div>
 
-                    <div class="m-program-category-image">
-                        <h2><i class="fas fa-school"></i> <span>Learn With Us Online</span></h2>
-                        <img src="assets/img/digital.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="m-program-category-contents m-program-category-2">
-                <div class="m-program-category-content">
-                    <div class="m-program-category-text">
-                        <h1>Business Campaign</h1>
-
-                        <p>We’re going hand in hand with businesses to help them navigate around the complex digital
-                            world!
-                            From Strategic Planning, to Creative Proposals, Content Creation and KOL Management — we
-                            love to
-                            help out.</p>
-
-                        <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <div class="m-program-category-image">
-                        <h2><i class="fas fa-briefcase"></i> <span>Grow Your Business With Us</span></h2>
-                        <img src="assets/img/business.jpg" alt="">
+                        <div class="m-program-category-image">
+                            <h2><i class="fas fa-school"></i> <span>Learn With Us Online</span></h2>
+                            <img src="assets/img/digital.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="m-program-category-contents m-program-category-3">
-                <div class="m-program-category-content">
-                    <div class="m-program-category-text">
-                        <h1>Social Campaign</h1>
+                <div class="m-program-category-contents m-program-category-2">
+                    <div class="m-program-category-content">
+                        <div class="m-program-category-text">
+                            <h1>Business Campaign</h1>
 
-                        <p>Here at Mengkadji, from the very start, we’re always striving to make a difference. Our
-                            social
-                            campaigns are very much a form of that. We believe in the art of sharing for the greater
-                            good.
-                        </p>
+                            <p>We’re going hand in hand with businesses to help them navigate around the complex digital
+                                world!
+                                From Strategic Planning, to Creative Proposals, Content Creation and KOL Management — we
+                                love to
+                                help out.</p>
 
-                        <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
-                    </div>
+                            <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        </div>
 
-                    <div class="m-program-category-image">
-                        <h2><i class="fas fa-briefcase"></i> <span>Many Things We Can Do Together</span></h2>
-                        <img src="assets/img/social.jpg" alt="">
+                        <div class="m-program-category-image">
+                            <h2><i class="fas fa-briefcase"></i> <span>Grow Your Business With Us</span></h2>
+                            <img src="assets/img/business.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="m-program-category-contents m-program-category-4">
-                <div class="m-program-category-content">
+                <div class="m-program-category-contents m-program-category-3">
+                    <div class="m-program-category-content">
+                        <div class="m-program-category-text">
+                            <h1>Social Campaign</h1>
 
-                    <div class="m-program-category-text">
-                        <h1>All Program's Here</h1>
+                            <p>Here at Mengkadji, from the very start, we’re always striving to make a difference. Our
+                                social
+                                campaigns are very much a form of that. We believe in the art of sharing for the greater
+                                good.
+                            </p>
 
-                        <p>All of our programs are available here, check here for more information.
-                        </p>
+                            <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        </div>
 
-                        <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        <div class="m-program-category-image">
+                            <h2><i class="fas fa-briefcase"></i> <span>Many Things We Can Do Together</span></h2>
+                            <img src="assets/img/social.jpg" alt="">
+                        </div>
                     </div>
+                </div>
 
-                    <div class="m-program-category-image">
-                        <h2><i class="fas fa-briefcase"></i> <span>Learn In Mengkadji is Fun</span></h2>
-                        <img src="assets/img/more.jpg" alt="">
+                <div class="m-program-category-contents m-program-category-4">
+                    <div class="m-program-category-content">
+
+                        <div class="m-program-category-text">
+                            <h1>All Program's Here</h1>
+
+                            <p>All of our programs are available here, check here for more information.
+                            </p>
+
+                            <a href="">Visit Program &nbsp;<i class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <div class="m-program-category-image">
+                            <h2><i class="fas fa-briefcase"></i> <span>Learn In Mengkadji is Fun</span></h2>
+                            <img src="assets/img/more.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
