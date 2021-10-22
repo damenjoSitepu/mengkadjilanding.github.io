@@ -15,10 +15,13 @@ $(document).on('click', '.m-navbar-responsive-click', function (e) {
         $('.lightSaber').hide('fast');
         $(".m-navbar-responsive-list").hide('fast');
         $(".m-navbar-responsive-click i").removeClass('fa-times').addClass('fa-bars');
+        $(".m-navbar-responsive-click").removeAttr('id', 'bar-transform').attr('id', 'bar-transform-rev');
     } else {
         $('.lightSaber').show('fast');
         $(".m-navbar-responsive-list").show('fast');
         $(".m-navbar-responsive-click i").removeClass('fa-bars').addClass('fa-times');
+        $(".m-navbar-responsive-click").removeAttr('id', 'bar-transform-rev').attr('id', 'bar-transform');
+
     }
 })
 
@@ -27,6 +30,7 @@ $(document).on('click', '.m-navbar-responsive-list-close', function (e) {
     $('.lightSaber').hide('fast');
     $(".m-navbar-responsive-list").hide('fast');
     $(".m-navbar-responsive-click i").removeClass('fa-times').addClass('fa-bars');
+    $(".m-navbar-responsive-click").removeAttr('id', 'bar-transform').attr('id', 'bar-transform-rev');
 });
 
 // Saat klik navbar mobile namun outter
@@ -35,6 +39,7 @@ $(document).on("click", function (e) {
         $('.lightSaber').hide('fast');
         $(".m-navbar-responsive-click i").removeClass('fa-times').addClass('fa-bars');
         $(".m-navbar-responsive-list").hide('fast');
+        $(".m-navbar-responsive-click").removeAttr('id', 'bar-transform').attr('id', 'bar-transform-rev');
     }
 });
 
@@ -46,6 +51,7 @@ $(window).on('resize', function () {
         });
         $(".m-navbar-responsive-click i").removeClass('fa-times').addClass('fa-bars');
         $(".m-navbar-responsive-list").hide('fast');
+        $(".m-navbar-responsive-click").removeAttr('id', 'bar-transform').attr('id', 'bar-transform-rev');
         $('.lightSaber').hide('fast');
     }
 });
@@ -168,82 +174,70 @@ ScrollReveal({
 })
 
 // Starter
-ScrollReveal().reveal('.m-program-category h2', {
-    origin: 'left'
+ScrollReveal().reveal('.m-program-categorys', {
+    origin: 'top'
 });
 
 ScrollReveal().reveal('.m-program-category-spawn', {
-    delay: 500,
+    delay: 250,
     origin: 'bottom'
 });
 
 
-ScrollReveal().reveal('.m-program-category-text h1', {
-    delay: 1200,
-    origin: 'left'
-});
 
-ScrollReveal().reveal('.m-program-category-text p', {
-    delay: 1200,
-    origin: 'right'
-});
 
-ScrollReveal().reveal('.m-program-category-text a', {
-    delay: 1700,
-    origin: 'bottom'
-});
 
-ScrollReveal().reveal('.m-program-category-image', {
-    delay: 1700,
-    origin: 'right'
-});
 
-// Program Category
+
+
+
+
+// review
 ScrollReveal().reveal('.m-review h2', {
-    delay: 500,
+    delay: 250,
     origin: 'top'
 });
 
 ScrollReveal().reveal('.m-review h3', {
-    delay: 500,
+    delay: 250,
     origin: 'bottom'
 });
 
 ScrollReveal().reveal('.rcv-1', {
-    delay: 1200,
-    origin: 'left'
+    delay: 250,
+    origin: 'top'
 });
 
 ScrollReveal().reveal('.rcv-2', {
-    delay: 1200,
-    origin: 'right'
+    delay: 250,
+    origin: 'bottom'
 });
 
 ScrollReveal().reveal('.m-review-content-mid', {
-    delay: 1200,
-    origin: 'bottom'
+    delay: 250,
+    origin: 'top'
 });
 
 
 // Interested
 ScrollReveal().reveal('.m-interested-content-lists-1', {
     delay: 250,
-    origin: 'right'
+    origin: 'bottom'
 });
 
 ScrollReveal().reveal('.m-interested-content-lists-2', {
-    delay: 500,
-    origin: 'right'
+    delay: 250,
+    origin: 'top'
 });
 
 ScrollReveal().reveal('.m-interested-content-lists-3', {
-    delay: 750,
-    origin: 'right'
+    delay: 250,
+    origin: 'bottom'
 });
 
 ScrollReveal().reveal('.m-interested-content-sticky', {
     delay: 250,
-    origin: 'right'
+    origin: 'top'
 });
 
 // Social Media

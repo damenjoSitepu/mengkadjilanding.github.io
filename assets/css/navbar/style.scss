@@ -1,6 +1,44 @@
 $mengkadji : #E50014;
 $defaultColor : rgb(221, 221, 221);
 
+#bar-transform {
+    color: $mengkadji;
+    display: block;
+    animation: .3s bar-transform linear forwards;
+}
+
+#bar-transform-rev {
+    color: rgba(20, 19, 20, 0.37);
+    display: block;
+    animation: .3s bar-transform-rev linear forwards;
+}
+
+@keyframes bar-transform {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(.8);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bar-transform-rev {
+    0% {
+        transform: scale(1.2);
+    }
+    25% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .lightSaber {
         display: none;
         z-index: 1000;
@@ -77,13 +115,15 @@ $defaultColor : rgb(221, 221, 221);
         padding: 50px 10px 40px 10px;
         display: none;
         position: fixed;
-        bottom: 0;
+        top: 10.25%;
         background-color: #fff;
         width: 80%;
         left: 50%;
         transform: translate(-50%, 0);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
         box-shadow: -2px -2px 5px 3px rgba(116, 116, 116, 0.116);
 
         .m-navbar-responsive-list-contain {
