@@ -37,6 +37,163 @@ body {
             }
 }
 
+// Khusus loading
+.loadSaber {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 10000;
+
+    .loadSabers {
+        position: relative;
+        display: flex;
+        width: 240px;
+        height: 210px;
+        margin: 200px auto;
+        text-align: center;
+        
+        .sabers {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-wrap: wrap;
+            
+            .saber {
+               z-index: -1;
+               width: 80px;
+               height: 70px;
+               
+               &:nth-child(odd){
+                    background-color: $mengkadji;
+                    animation: 6.5s odd linear infinite;
+               }
+
+               &:nth-child(even){
+                    background-color: rgb(241, 213, 213);
+                    animation: 6.5s even linear infinite;
+               }
+            }
+
+            @keyframes even {
+                0% {
+                    background-color: rgb(241, 213, 213);           
+                }
+
+                7.5% {
+                    background-color: $mengkadji; 
+                }
+
+                15% {
+                    background-color: rgb(241, 213, 213)
+                }
+
+                22.5% {
+                    background-color: $mengkadji;
+                }
+
+                30% {
+                    background-color: rgb(241, 213, 213)
+                }
+
+                37.5% {
+                    background-color: $mengkadji;
+                }
+
+                45% {
+                    background-color: rgb(241, 213, 213) 
+                }
+
+                52.5% {
+                    background-color: $mengkadji;
+                }
+
+                60% {
+                    opacity: 1;
+                    background-color: rgb(241, 213, 213)  
+                }
+
+                70% {
+                    opacity: 0;
+                    background-color: $mengkadji;
+                }
+
+                75% {
+                    opacity: 1;
+                }
+
+                100% {
+                    background-color: $mengkadji;
+                }
+            }
+
+            @keyframes odd {
+                0% {
+                    background-color: $mengkadji; 
+                }
+
+                7.5% {
+                    background-color: rgb(241, 213, 213);
+                }
+
+                15% {
+                    background-color: $mengkadji; 
+                }
+
+                22.5% {
+                    background-color: rgb(241, 213, 213);
+                }
+
+                30% {
+                    background-color: $mengkadji; 
+                }
+
+                37.5% {
+                    background-color: rgb(241, 213, 213);
+                }
+
+                45% {
+                    background-color: $mengkadji; 
+                }
+
+                52.5% {
+                    background-color: rgb(241, 213, 213);
+                }
+
+                60% {
+                    opacity: 1;
+                    background-color: $mengkadji; 
+                }
+
+                70% {
+                    opacity: 0;
+                }
+
+                75% {
+                    opacity: 1;
+                }
+
+                100% {
+                    background-color: $mengkadji;
+                }
+            }
+        }
+
+        h2 {
+            margin: auto;
+            letter-spacing: 2px;
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+}
+// End Loading
+
 // Khusus Footer 
 .m-footer {
     width: 100%;
@@ -140,10 +297,80 @@ body {
         max-width: 1800px;
         margin: auto;
     }
+
+    // Khusus loading
+    .loadSaber {
+        .loadSabers {
+            width: 270px; //240
+            height: 240px; //210
+            margin: 200px auto;
+            text-align: center;
+            
+            .sabers {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                
+                .saber {
+                    z-index: -1;
+                    width: 90px;
+                    height: 80px;
+                }
+              
+            }
+
+            h2 {
+                margin: auto;
+                letter-spacing: 2px;
+                font-size: 42px;
+                color: #fff;
+            }
+        }
+    }
+    // End Loading
 }
 
 // Medium Device
 @media only screen and (max-width: 1200px){
+    // Khusus loading
+    .loadSaber {
+        .loadSabers {
+            width: 210px; //240
+            height: 180px; //210
+            margin: 200px auto;
+            text-align: center;
+            
+            .sabers {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                
+                .saber {
+                    z-index: -1;
+                    width: 70px;
+                    height: 60px;
+                }
+              
+            }
+
+            h2 {
+                margin: auto;
+                letter-spacing: 2px;
+                font-size: 35px;
+                color: #fff;
+            }
+        }
+    }
+    // End Loading
+
     // Khusus Footer 
     .m-footer {
 
@@ -220,6 +447,41 @@ body {
 
 // Tablet
 @media only screen and (max-width: 900px){
+    // Khusus loading
+    .loadSaber {
+        .loadSabers {
+            width: 180px; //240
+            height: 150px; //210
+            margin: 200px auto;
+            text-align: center;
+            
+            .sabers {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                
+                .saber {
+                    z-index: -1;
+                    width: 60px;
+                    height: 50px;
+                }
+            
+            }
+
+            h2 {
+                margin: auto;
+                letter-spacing: 2px;
+                font-size: 28px;
+                color: #fff;
+            }
+        }
+    }
+    // End Loading
+
     // Khusus Footer 
     .m-footer {
         .m-footers {
@@ -296,6 +558,41 @@ body {
 // Mobile ( Primary )
 @media only screen and (max-width: 600px) 
 {
+    // Khusus loading
+    .loadSaber {
+        .loadSabers {
+            width: 150px; //240
+            height: 120px; //210
+            margin: 200px auto;
+            text-align: center;
+            
+            .sabers {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                
+                .saber {
+                    z-index: -1;
+                    width: 50px;
+                    height: 40px;
+                }
+            
+            }
+
+            h2 {
+                margin: auto;
+                letter-spacing: 2px;
+                font-size: 24px;
+                color: #fff;
+            }
+        }
+    }
+    // End Loading
+
     // Khusus Footer 
     .m-footer {
 

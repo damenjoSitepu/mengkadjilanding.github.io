@@ -35,6 +35,227 @@ body::-webkit-scrollbar-thumb {
           box-sizing: border-box;
 }
 
+.loadSaber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 10000;
+}
+
+.loadSaber .loadSabers {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 240px;
+  height: 210px;
+  margin: 200px auto;
+  text-align: center;
+}
+
+.loadSaber .loadSabers .sabers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.loadSaber .loadSabers .sabers .saber {
+  z-index: -1;
+  width: 80px;
+  height: 70px;
+}
+
+.loadSaber .loadSabers .sabers .saber:nth-child(odd) {
+  background-color: #E50014;
+  -webkit-animation: 6.5s odd linear infinite;
+          animation: 6.5s odd linear infinite;
+}
+
+.loadSaber .loadSabers .sabers .saber:nth-child(even) {
+  background-color: #f1d5d5;
+  -webkit-animation: 6.5s even linear infinite;
+          animation: 6.5s even linear infinite;
+}
+
+@-webkit-keyframes even {
+  0% {
+    background-color: #f1d5d5;
+  }
+  7.5% {
+    background-color: #E50014;
+  }
+  15% {
+    background-color: #f1d5d5;
+  }
+  22.5% {
+    background-color: #E50014;
+  }
+  30% {
+    background-color: #f1d5d5;
+  }
+  37.5% {
+    background-color: #E50014;
+  }
+  45% {
+    background-color: #f1d5d5;
+  }
+  52.5% {
+    background-color: #E50014;
+  }
+  60% {
+    opacity: 1;
+    background-color: #f1d5d5;
+  }
+  70% {
+    opacity: 0;
+    background-color: #E50014;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    background-color: #E50014;
+  }
+}
+
+@keyframes even {
+  0% {
+    background-color: #f1d5d5;
+  }
+  7.5% {
+    background-color: #E50014;
+  }
+  15% {
+    background-color: #f1d5d5;
+  }
+  22.5% {
+    background-color: #E50014;
+  }
+  30% {
+    background-color: #f1d5d5;
+  }
+  37.5% {
+    background-color: #E50014;
+  }
+  45% {
+    background-color: #f1d5d5;
+  }
+  52.5% {
+    background-color: #E50014;
+  }
+  60% {
+    opacity: 1;
+    background-color: #f1d5d5;
+  }
+  70% {
+    opacity: 0;
+    background-color: #E50014;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    background-color: #E50014;
+  }
+}
+
+@-webkit-keyframes odd {
+  0% {
+    background-color: #E50014;
+  }
+  7.5% {
+    background-color: #f1d5d5;
+  }
+  15% {
+    background-color: #E50014;
+  }
+  22.5% {
+    background-color: #f1d5d5;
+  }
+  30% {
+    background-color: #E50014;
+  }
+  37.5% {
+    background-color: #f1d5d5;
+  }
+  45% {
+    background-color: #E50014;
+  }
+  52.5% {
+    background-color: #f1d5d5;
+  }
+  60% {
+    opacity: 1;
+    background-color: #E50014;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    background-color: #E50014;
+  }
+}
+
+@keyframes odd {
+  0% {
+    background-color: #E50014;
+  }
+  7.5% {
+    background-color: #f1d5d5;
+  }
+  15% {
+    background-color: #E50014;
+  }
+  22.5% {
+    background-color: #f1d5d5;
+  }
+  30% {
+    background-color: #E50014;
+  }
+  37.5% {
+    background-color: #f1d5d5;
+  }
+  45% {
+    background-color: #E50014;
+  }
+  52.5% {
+    background-color: #f1d5d5;
+  }
+  60% {
+    opacity: 1;
+    background-color: #E50014;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    background-color: #E50014;
+  }
+}
+
+.loadSaber .loadSabers h2 {
+  margin: auto;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #fff;
+}
+
 .m-footer {
   width: 100%;
   background-color: #f8e5e673;
@@ -137,9 +358,67 @@ body::-webkit-scrollbar-thumb {
     max-width: 1800px;
     margin: auto;
   }
+  .loadSaber .loadSabers {
+    width: 270px;
+    height: 240px;
+    margin: 200px auto;
+    text-align: center;
+  }
+  .loadSaber .loadSabers .sabers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loadSaber .loadSabers .sabers .saber {
+    z-index: -1;
+    width: 90px;
+    height: 80px;
+  }
+  .loadSaber .loadSabers h2 {
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 42px;
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
+  .loadSaber .loadSabers {
+    width: 210px;
+    height: 180px;
+    margin: 200px auto;
+    text-align: center;
+  }
+  .loadSaber .loadSabers .sabers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loadSaber .loadSabers .sabers .saber {
+    z-index: -1;
+    width: 70px;
+    height: 60px;
+  }
+  .loadSaber .loadSabers h2 {
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #fff;
+  }
   .m-footer .m-footers {
     width: calc(100% - 120px);
     margin: auto;
@@ -201,6 +480,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 900px) {
+  .loadSaber .loadSabers {
+    width: 180px;
+    height: 150px;
+    margin: 200px auto;
+    text-align: center;
+  }
+  .loadSaber .loadSabers .sabers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loadSaber .loadSabers .sabers .saber {
+    z-index: -1;
+    width: 60px;
+    height: 50px;
+  }
+  .loadSaber .loadSabers h2 {
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 28px;
+    color: #fff;
+  }
   .m-footer .m-footers {
     width: calc(100% - 120px);
     margin: auto;
@@ -262,6 +570,35 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 600px) {
+  .loadSaber .loadSabers {
+    width: 150px;
+    height: 120px;
+    margin: 200px auto;
+    text-align: center;
+  }
+  .loadSaber .loadSabers .sabers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .loadSaber .loadSabers .sabers .saber {
+    z-index: -1;
+    width: 50px;
+    height: 40px;
+  }
+  .loadSaber .loadSabers h2 {
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 24px;
+    color: #fff;
+  }
   .m-footer .m-footer-comp {
     margin-bottom: 30px;
   }
