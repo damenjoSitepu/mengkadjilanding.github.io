@@ -123,15 +123,31 @@ body {
                     animation: 6.5s odd linear infinite;
                }
 
+                &:nth-child(1){
+                    border-top-left-radius: 10px;
+                }
+
+                &:nth-child(3){
+                    border-top-right-radius: 10px;
+                }
+
+                &:nth-child(7){
+                    border-bottom-left-radius: 10px;
+                }
+
+                &:nth-child(9){
+                    border-bottom-right-radius: 10px;
+                }
+
                &:nth-child(even){
-                    background-color: rgb(241, 213, 213);
+                    background-color: #fff;
                     animation: 6.5s even linear infinite;
                }
             }
 
             @keyframes even {
                 0% {
-                    background-color: rgb(241, 213, 213);           
+                    background-color: #fff;           
                 }
 
                 7.5% {
@@ -139,7 +155,7 @@ body {
                 }
 
                 15% {
-                    background-color: rgb(241, 213, 213)
+                    background-color: #fff
                 }
 
                 22.5% {
@@ -147,7 +163,7 @@ body {
                 }
 
                 30% {
-                    background-color: rgb(241, 213, 213)
+                    background-color: #fff
                 }
 
                 37.5% {
@@ -155,7 +171,7 @@ body {
                 }
 
                 45% {
-                    background-color: rgb(241, 213, 213) 
+                    background-color: #fff 
                 }
 
                 52.5% {
@@ -164,7 +180,7 @@ body {
 
                 60% {
                     opacity: 1;
-                    background-color: rgb(241, 213, 213)  
+                    background-color: #fff  
                 }
 
                 70% {
@@ -187,7 +203,7 @@ body {
                 }
 
                 7.5% {
-                    background-color: rgb(241, 213, 213);
+                    background-color: #fff;
                 }
 
                 15% {
@@ -195,7 +211,7 @@ body {
                 }
 
                 22.5% {
-                    background-color: rgb(241, 213, 213);
+                    background-color: #fff;
                 }
 
                 30% {
@@ -203,7 +219,7 @@ body {
                 }
 
                 37.5% {
-                    background-color: rgb(241, 213, 213);
+                    background-color: #fff;
                 }
 
                 45% {
@@ -211,7 +227,7 @@ body {
                 }
 
                 52.5% {
-                    background-color: rgb(241, 213, 213);
+                    background-color: #fff;
                 }
 
                 60% {
@@ -238,6 +254,25 @@ body {
             letter-spacing: 2px;
             font-size: 40px;
             color: #fff;
+            animation: 6.5s anitext linear infinite;
+        }
+
+        @keyframes anitext{
+            0% {
+                opacity: 0;
+            }
+
+            70% {
+                opacity: 0;
+            }
+
+            75% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     }
 }

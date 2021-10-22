@@ -145,40 +145,56 @@ body::-webkit-scrollbar-thumb {
           animation: 6.5s odd linear infinite;
 }
 
+.loadSaber .loadSabers .sabers .saber:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+.loadSaber .loadSabers .sabers .saber:nth-child(3) {
+  border-top-right-radius: 10px;
+}
+
+.loadSaber .loadSabers .sabers .saber:nth-child(7) {
+  border-bottom-left-radius: 10px;
+}
+
+.loadSaber .loadSabers .sabers .saber:nth-child(9) {
+  border-bottom-right-radius: 10px;
+}
+
 .loadSaber .loadSabers .sabers .saber:nth-child(even) {
-  background-color: #f1d5d5;
+  background-color: #fff;
   -webkit-animation: 6.5s even linear infinite;
           animation: 6.5s even linear infinite;
 }
 
 @-webkit-keyframes even {
   0% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   7.5% {
     background-color: #E50014;
   }
   15% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   22.5% {
     background-color: #E50014;
   }
   30% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   37.5% {
     background-color: #E50014;
   }
   45% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   52.5% {
     background-color: #E50014;
   }
   60% {
     opacity: 1;
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   70% {
     opacity: 0;
@@ -194,32 +210,32 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes even {
   0% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   7.5% {
     background-color: #E50014;
   }
   15% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   22.5% {
     background-color: #E50014;
   }
   30% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   37.5% {
     background-color: #E50014;
   }
   45% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   52.5% {
     background-color: #E50014;
   }
   60% {
     opacity: 1;
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   70% {
     opacity: 0;
@@ -238,25 +254,25 @@ body::-webkit-scrollbar-thumb {
     background-color: #E50014;
   }
   7.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   15% {
     background-color: #E50014;
   }
   22.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   30% {
     background-color: #E50014;
   }
   37.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   45% {
     background-color: #E50014;
   }
   52.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   60% {
     opacity: 1;
@@ -278,25 +294,25 @@ body::-webkit-scrollbar-thumb {
     background-color: #E50014;
   }
   7.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   15% {
     background-color: #E50014;
   }
   22.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   30% {
     background-color: #E50014;
   }
   37.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   45% {
     background-color: #E50014;
   }
   52.5% {
-    background-color: #f1d5d5;
+    background-color: #fff;
   }
   60% {
     opacity: 1;
@@ -318,6 +334,38 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 2px;
   font-size: 40px;
   color: #fff;
+  -webkit-animation: 6.5s anitext linear infinite;
+          animation: 6.5s anitext linear infinite;
+}
+
+@-webkit-keyframes anitext {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anitext {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .m-footer {
