@@ -745,7 +745,7 @@ $defaultColor : rgb(221, 221, 221);
 @media only screen and (max-width: 1200px){
     // Starter
     .m-starter {
-        height: 50vh;
+        height: 60vh;
 
         .m-starter-body {
             transform: translate(-50%, 15%);
@@ -1083,7 +1083,7 @@ $defaultColor : rgb(221, 221, 221);
 
     // Starter
     .m-starter {
-        height: 45vh;
+        height: 60vh;
 
         .m-starter-body {
             transform: translate(-50%, 15%);
@@ -1473,7 +1473,7 @@ $defaultColor : rgb(221, 221, 221);
 {
 // Starter
 .m-starter {
-    height: 45vh;
+    height: 60vh;
 
     .m-starter-body {
         transform: translate(-50%, 15%);
@@ -1496,6 +1496,8 @@ $defaultColor : rgb(221, 221, 221);
         a {
             padding: 6px;
             font-size: 14px;
+            display: block;
+            width: 40%;
         }
     }
 }

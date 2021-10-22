@@ -37,6 +37,52 @@ body {
             }
 }
 
+// Khusus corner icon
+.corner-icon {
+    display: none;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: fixed;
+    bottom: 8%;
+    right: 3%;
+    font-size: 35px;
+    z-index: 1000;
+    color: $mengkadji;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: 2px 2px 20px rgba(31, 31, 31, 0.514);
+
+    &::before {
+        content: '';
+        position: absolute;
+        transform: scale(1);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border: 2px solid $mengkadji;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: 1s signal-corner linear infinite;
+    }
+}
+
+@keyframes signal-corner {
+    0% {
+        border-color: $mengkadji;
+        transform: scale(1);
+    }
+
+    100% {
+        border-color: #e5001300;
+        transform: scale(1.6);
+    }
+}
+
 // Khusus loading
 .loadSaber {
     position: fixed;
@@ -448,6 +494,40 @@ body {
 
 // Tablet
 @media only screen and (max-width: 900px){
+    // Khusus corner icon
+    .corner-icon {
+        display: none;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: fixed;
+        bottom: 8%;
+        right: 3%;
+        font-size: 32px;
+        z-index: 1000;
+        color: $mengkadji;
+        text-align: center;
+        line-height: 65px;
+        box-shadow: 2px 2px 20px rgba(31, 31, 31, 0.514);
+
+        &::before {
+            content: '';
+            position: absolute;
+            transform: scale(1);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            border: 2px solid $mengkadji;
+            border-radius: 50%;
+            box-sizing: border-box;
+            animation: 1s signal-corner linear infinite;
+        }
+    }
+
     // Khusus loading
     .loadSaber {
         .loadSabers {

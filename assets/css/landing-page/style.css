@@ -842,7 +842,7 @@
 
 @media only screen and (max-width: 1200px) {
   .m-starter {
-    height: 50vh;
+    height: 60vh;
   }
   .m-starter .m-starter-body {
     -webkit-transform: translate(-50%, 15%);
@@ -1127,7 +1127,7 @@
     padding-top: 60px;
   }
   .m-starter {
-    height: 45vh;
+    height: 60vh;
   }
   .m-starter .m-starter-body {
     -webkit-transform: translate(-50%, 15%);
@@ -1459,7 +1459,7 @@
 
 @media only screen and (max-width: 600px) {
   .m-starter {
-    height: 45vh;
+    height: 60vh;
   }
   .m-starter .m-starter-body {
     -webkit-transform: translate(-50%, 15%);
@@ -1480,6 +1480,8 @@
   .m-starter .m-starter-body a {
     padding: 6px;
     font-size: 14px;
+    display: block;
+    width: 40%;
   }
   .m-program-category {
     width: 80%;

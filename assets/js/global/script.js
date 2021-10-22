@@ -88,15 +88,35 @@ $(document).ready(function () {
     })
     // End Program Category
 
+    // Scroll event
+    $(window).on('scroll', function () {
+        let myScroll = $(window).scrollTop();
 
+        if (myScroll > $(".m-reviews").offset().top - 750) {
+            $(".corner-icon").show('fast');
+        } else {
+            $(".corner-icon").hide('fast');
+        }
+    });
+
+
+    $('.corner-icon').click(function (event) {
+        event.preventDefault();
+
+        let myScroll = $(window).scrollTop();
+
+        if (!event.detail || event.detail == 1) {
+            $('html, body').animate({ scrollTop: myScroll + 100 }, 250).animate({ scrollTop: 0 }, 1000);
+        }
+
+        return false;
+    })
 
     // Skenario Menu bar akan di tutup saat mencapai ketinggian tertentu ( scroll )
     // Saat halaman discroll kebawah, maka hilangkan navbar, sebaliknya
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         let myScroll = $(window).scrollTop();
-
-
 
         if (myScroll > $('.m-starter').offset().top - 300 + $('.m-starter').height()) {
             let currentScrollPos = window.pageYOffset;
