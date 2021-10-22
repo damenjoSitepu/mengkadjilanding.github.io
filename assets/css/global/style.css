@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh;
   background-color: #fff;
   z-index: 10000;
 }
