@@ -1274,6 +1274,10 @@ $defaultColor : rgb(221, 221, 221);
             &:not(:hover) span {
                 visibility: hidden;
             }
+
+            span {
+                display: none;
+            }
         }
     }
     

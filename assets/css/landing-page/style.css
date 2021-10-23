@@ -1313,6 +1313,9 @@
   .m-program-category .m-program-category-spawn a:not(:hover) span {
     visibility: hidden;
   }
+  .m-program-category .m-program-category-spawn a span {
+    display: none;
+  }
   .m-program-category .m-program-category-content {
     margin-top: 80px;
     display: block;
