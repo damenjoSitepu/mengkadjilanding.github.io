@@ -598,14 +598,19 @@
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
+  -ms-grid-columns: .7fr 1.5fr;
+      grid-template-columns: .7fr 1.5fr;
+  grid-gap: 5%;
 }
 
 .m-interested .m-interested-content .m-interested-content-sticky div {
   position: -webkit-sticky;
   position: sticky;
   top: 150px;
+}
+
+.m-interested .m-interested-content .m-interested-content-sticky div h1 {
+  font-size: 45px;
 }
 
 .m-interested .m-interested-content .m-interested-content-sticky div h2 {
@@ -619,7 +624,19 @@
   -ms-grid-columns: 1.5fr 1.5fr;
       grid-template-columns: 1.5fr 1.5fr;
   grid-gap: 20%;
-  height: 75vh;
+  height: 70vh;
+}
+
+.m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists .interest-order-1 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists .interest-order-2 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists .img-container {
@@ -650,13 +667,14 @@
 }
 
 .m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists h1 {
+  font-size: 35px;
   margin-bottom: 20px;
   color: #E50014;
 }
 
 .m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists p {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists a {
@@ -1152,7 +1170,7 @@
     -ms-grid-columns: 1.5fr 2fr;
         grid-template-columns: 1.5fr 2fr;
     grid-gap: 14%;
-    height: 75vh;
+    height: 60vh;
   }
   .m-interested .m-interested-content .m-interested-content-list .m-interested-content-lists .img-container .icon {
     width: 50px;

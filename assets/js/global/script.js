@@ -75,6 +75,28 @@ $(window).on('load', function () {
     ScrollReveal().reveal('.m-social-media', {
         delay: 250
     });
+
+
+    // Scroll Reveals
+    ScrollReveal({
+        reset: true,
+        distance: '0px',
+        duration: 1000,
+        delay: 0
+    })
+
+    ScrollReveal().reveal('.ic-1', {
+        delay: 500
+    });
+
+    ScrollReveal().reveal('.ic-2', {
+        delay: 500
+    });
+
+    ScrollReveal().reveal('.ic-3', {
+        delay: 500
+    });
+
 });
 
 $(document).ready(function () {

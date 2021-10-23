@@ -511,13 +511,18 @@ $defaultColor : rgb(221, 221, 221);
     .m-interested-content {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 1.5fr;
+        grid-template-columns: .7fr 1.5fr;
+        grid-gap: 5%;
         
 
         .m-interested-content-sticky {
             div {
                 position: sticky;
                 top: 150px;
+
+                h1 {
+                    font-size: 45px;
+                }
 
                 h2 {
                     color: $mengkadji;
@@ -532,7 +537,17 @@ $defaultColor : rgb(221, 221, 221);
                 display: grid;
                 grid-template-columns: 1.5fr 1.5fr;
                 grid-gap: 20%;
-                height: 75vh;
+                height: 70vh;
+
+                .interest-order-1 {
+                    order: 2;
+                    
+                    
+                }
+
+                .interest-order-2 {
+                    order: 1;
+                }
 
                 .img-container {
                     position: relative;
@@ -561,13 +576,14 @@ $defaultColor : rgb(221, 221, 221);
                 }
 
                 h1 {
+                    font-size: 35px;
                     margin-bottom: 20px;
                     color: $mengkadji;
                 }
 
                 p {
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: 25px;
                 }
 
                 a {
@@ -1085,7 +1101,7 @@ $defaultColor : rgb(221, 221, 221);
                     display: grid;
                     grid-template-columns: 1.5fr 2fr;
                     grid-gap: 14%;
-                    height: 75vh;
+                    height: 60vh;
 
                     .img-container {
 
