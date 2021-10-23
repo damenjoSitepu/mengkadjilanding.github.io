@@ -16,6 +16,13 @@ $defaultColor : rgb(221, 221, 221);
 body {
     font-family: 'fontscorecomttwcenmt' !important;
     overflow-x: hidden;
+
+
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -25,18 +32,142 @@ body {
 
         &::-webkit-scrollbar {
             width: 9px;               /* width of the entire scrollbar */
-            }
+        }
           
    
           
-            &::-webkit-scrollbar-thumb {
-            background-color: rgba(177, 177, 177, 0.952);    /* color of the scroll thumb */
-            border-radius: 20px;       /* roundness of the scroll thumb */
-            /* creates padding around scroll thumb */
-            box-sizing: border-box;
-            }
+        &::-webkit-scrollbar-thumb {
+        background-color: rgba(177, 177, 177, 0.952);    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        /* creates padding around scroll thumb */
+        box-sizing: border-box;
+        }
 }
 
+
+// Khusus animasi saat pertama kali masuk halaman landing page
+.ani-start-page {
+    animation: 1s navbar-first linear forwards;
+}
+
+.ani-m-starter {
+    animation: 2s m-starter linear forwards;
+}
+
+#m-starter-proudly {
+    animation: 4s m-starter-proudly linear forwards;
+}
+
+#m-starter-discover {
+    animation: 4s m-starter-discover linear forwards;
+}
+
+#m-starter-try {
+    animation: 4s m-starter-try linear forwards;
+}
+
+#m-starter-link {
+    animation: 5s m-starter-link linear forwards;
+}
+
+@keyframes m-starter-link {
+    0% {
+        opacity: 0;
+        
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes m-starter-proudly {
+    0% {
+        opacity: 0;
+        
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(0,-20px); 
+    }
+
+    80% {
+        transform: translate(0,10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes m-starter-discover {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translate(0,20px); 
+    }
+
+    80% {
+        transform: translate(0,-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@keyframes m-starter-try {
+    0% {
+        opacity: 0;
+        
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(.7); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1); 
+    }
+}
+
+@keyframes m-starter {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes navbar-first {
+    0% {
+        opacity: 0;
+        transform: translate(0,80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
 
 
 // Khusus corner icon
@@ -124,7 +255,7 @@ body {
                
                &:nth-child(odd){
                     background-color: $mengkadji;
-                    animation: 6.5s odd linear infinite;
+                    animation: 5.5s odd linear infinite;
                }
 
                 &:nth-child(1){
@@ -145,54 +276,42 @@ body {
 
                &:nth-child(even){
                     background-color: #fff;
-                    animation: 6.5s even linear infinite;
+                    animation: 5.5s even linear infinite;
                }
             }
 
             @keyframes even {
-                0% {
+                10% {
                     background-color: #fff;           
                 }
 
-                7.5% {
+                20% {
                     background-color: $mengkadji; 
-                }
-
-                15% {
-                    background-color: #fff
-                }
-
-                22.5% {
-                    background-color: $mengkadji;
                 }
 
                 30% {
                     background-color: #fff
                 }
 
-                37.5% {
+                40% {
                     background-color: $mengkadji;
                 }
 
-                45% {
-                    background-color: #fff 
-                }
-
-                52.5% {
-                    background-color: $mengkadji;
+                50% {
+                    background-color: #fff
                 }
 
                 60% {
                     opacity: 1;
-                    background-color: #fff  
+                    background-color: $mengkadji;
                 }
 
-                70% {
+                65% {
                     opacity: 0;
                     background-color: $mengkadji;
                 }
 
-                75% {
+                70% {
                     opacity: 1;
                 }
 
@@ -202,19 +321,11 @@ body {
             }
 
             @keyframes odd {
-                0% {
+                10% {
                     background-color: $mengkadji; 
                 }
 
-                7.5% {
-                    background-color: #fff;
-                }
-
-                15% {
-                    background-color: $mengkadji; 
-                }
-
-                22.5% {
+                20% {
                     background-color: #fff;
                 }
 
@@ -222,29 +333,25 @@ body {
                     background-color: $mengkadji; 
                 }
 
-                37.5% {
+                40% {
                     background-color: #fff;
                 }
 
-                45% {
+                50% {
                     background-color: $mengkadji; 
                 }
 
-                52.5% {
+                60% {
                     background-color: #fff;
                 }
 
-                60% {
+                65% {
                     opacity: 1;
                     background-color: $mengkadji; 
                 }
 
                 70% {
                     opacity: 0;
-                }
-
-                75% {
-                    opacity: 1;
                 }
 
                 100% {
@@ -258,7 +365,7 @@ body {
             letter-spacing: 2px;
             font-size: 40px;
             color: #fff;
-            animation: 6.5s anitext linear infinite;
+            animation: 5.5s anitext linear infinite;
         }
 
         @keyframes anitext{

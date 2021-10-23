@@ -1,4 +1,22 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 $(window).on('load', function () {
+    // Enable Scrolling mode
+    setTimeout(function () {
+        $('body').removeClass('stop-scrolling');
+        $(".loadSaber").hide();
+
+        // Animasi landing page utama awal
+        $('.m-navbar').addClass('ani-start-page');
+        $('.m-starter').addClass('ani-m-starter');
+        $('.m-starter-body h3').attr('id', 'm-starter-proudly');
+        $('.m-starter-body h1').attr('id', 'm-starter-discover');
+        $('.m-starter-body h2').attr('id', 'm-starter-try');
+        $('.m-starter-body a').attr('id', 'm-starter-link');
+    }, 5000);
+
     // Scroll Reveal
     ScrollReveal({
         reset: false,
@@ -100,9 +118,7 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
-    setTimeout(function () {
-        $(".loadSaber").hide();
-    }, 6000);
+
 
 
     // Saat menu list di hover
