@@ -41,13 +41,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ani-start-page {
-  -webkit-animation: 1s navbar-first linear forwards;
-          animation: 1s navbar-first linear forwards;
-}
-
-.ani-m-starter {
-  -webkit-animation: 2s m-starter linear forwards;
-          animation: 2s m-starter linear forwards;
+  -webkit-animation: 2s navbar-first linear forwards;
+          animation: 2s navbar-first linear forwards;
 }
 
 #m-starter-proudly {
@@ -233,26 +228,18 @@ body::-webkit-scrollbar-thumb {
 @-webkit-keyframes navbar-first {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, 80px);
-            transform: translate(0, 80px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
   }
 }
 
 @keyframes navbar-first {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0, 80px);
-            transform: translate(0, 80px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
   }
 }
 
@@ -583,8 +570,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   line-height: 40px;
   text-decoration: none;
-  font-weight: bold;
-  color: #3f3f3f;
+  color: #636363;
 }
 
 .m-footer .m-footer-layer-1 a:hover {
@@ -625,6 +611,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .m-footer .m-footer-layer-2 a {
+  background-color: #fff;
   margin: auto;
   width: 50px;
   height: 50px;
@@ -646,8 +633,7 @@ body::-webkit-scrollbar-thumb {
 
 .m-footer .m-footer-layer-3 small {
   font-size: 18px;
-  font-weight: bold;
-  color: #5a5a5a;
+  color: #949494;
 }
 
 @media only screen and (min-width: 1800px) {
@@ -935,7 +921,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 30px;
   }
   .m-footer .m-footer-layer-1 {
-    margin: 80px 0;
+    margin: 0 0 80px 0;
     display: block;
     -ms-grid-columns: 1.5fr;
         grid-template-columns: 1.5fr;

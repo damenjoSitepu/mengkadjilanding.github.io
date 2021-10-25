@@ -47,11 +47,7 @@ body {
 
 // Khusus animasi saat pertama kali masuk halaman landing page
 .ani-start-page {
-    animation: 1s navbar-first linear forwards;
-}
-
-.ani-m-starter {
-    animation: 2s m-starter linear forwards;
+    animation: 2s navbar-first linear forwards;
 }
 
 #m-starter-proudly {
@@ -160,12 +156,10 @@ body {
 @keyframes navbar-first {
     0% {
         opacity: 0;
-        transform: translate(0,80px);
     }
 
     100% {
         opacity: 1;
-        transform: translate(0,0);
     }
 }
 
@@ -416,8 +410,8 @@ body {
             display: block;
             line-height: 40px;
             text-decoration: none;
-            font-weight: bold;
-            color: rgb(63, 63, 63);
+            // font-weight: bold;
+            color: rgb(99, 99, 99);
         }
 
         a {
@@ -458,6 +452,7 @@ body {
         }
 
         a {
+            background-color: #fff;
             margin: auto;
             width: 50px;
             height: 50px;
@@ -477,8 +472,7 @@ body {
 
         small {
             font-size: 18px;
-            font-weight: bold;
-            color: rgb(90, 90, 90);
+            color: rgb(148, 148, 148);
         }
     }
 }
@@ -830,7 +824,7 @@ body {
         }
 
         .m-footer-layer-1 {
-            margin: 80px 0;
+            margin: 0 0 80px 0;
             display: block;
             grid-template-columns: 1.5fr;
             grid-gap: 5%;

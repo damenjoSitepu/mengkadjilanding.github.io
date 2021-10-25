@@ -9,7 +9,7 @@ $(window).on('load', function () {
         $(".loadSaber").hide();
 
         // Animasi landing page utama awal
-        $('.m-navbar').addClass('ani-start-page');
+        // $('.m-navbar').addClass('ani-start-page');
         $('.m-starter').addClass('ani-m-starter');
         $('.m-starter-body h3').attr('id', 'm-starter-proudly');
         $('.m-starter-body h1').attr('id', 'm-starter-discover');
