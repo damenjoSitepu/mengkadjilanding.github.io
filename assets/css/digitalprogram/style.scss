@@ -325,7 +325,7 @@ $smooth: rgb(250, 239, 239);
         background-size: cover;
         background-position: center center;
         z-index: -1;
-        opacity: .3;
+        opacity: .1;
     }
 
     .m-speaker-container {
@@ -564,6 +564,7 @@ $smooth: rgb(250, 239, 239);
         right: 0;
         bottom: 0;
         background: url('../../img/limit-theme.jpg');
+        opacity: .5;
         background-size: cover;
         background-position: center right;
         z-index: -1;
