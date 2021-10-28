@@ -61,11 +61,6 @@ $(document).ready(function () {
         origin: 'bottom'
     });
 
-    ScrollReveal().reveal('.left-sides', {
-        delay: 400,
-        origin: 'left'
-    });
-
     ScrollReveal().reveal('.right-sides', {
         delay: 500,
         origin: 'right'

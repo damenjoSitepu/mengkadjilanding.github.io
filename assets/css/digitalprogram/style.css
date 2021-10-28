@@ -320,7 +320,7 @@
   background-size: cover;
   background-position: center center;
   z-index: -1;
-  opacity: .1;
+  opacity: .3;
 }
 
 .m-speaker .m-speaker-container {
@@ -555,7 +555,6 @@
   right: 0;
   bottom: 0;
   background: url("../../img/limit-theme.jpg");
-  opacity: .5;
   background-size: cover;
   background-position: center right;
   z-index: -1;
