@@ -1,0 +1,1390 @@
+$mengkadji : #E50014;
+$defaultColor : rgb(221, 221, 221);
+$smooth: rgb(250, 239, 239);
+
+.m-container {
+  padding-top: 80px;
+}
+
+// Business Starter
+.m-business-container {
+    position: relative;
+
+    &::before {
+        content : '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 190px;
+        background: rgb(249,56,56);
+background: linear-gradient(90deg, rgba(249,56,56,1) 0%, rgba(255,170,10,1) 100%);
+    }
+
+    .m-business {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+        width: 80%;
+        margin: auto;
+
+        .m-business-left {
+
+            .still-left {
+                box-sizing: border-box;
+                margin-top: 75px;
+
+                h1 {
+                    margin-bottom: 15px;
+                    font-size: 30px;
+                    span {
+                        color: #fff;
+                    }
+                }
+
+                h2 {
+                    margin-bottom: 30px;
+                    font-size: 45px;
+                    color: #fff;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.973);
+                    
+                }
+                
+                div {
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 40px 0;
+
+                    a {
+                        position: relative;
+                        overflow: hidden;
+                        font-weight: bold;
+                        background-color: $smooth;
+                        color: $mengkadji;
+                        display: block;
+                        text-align: center;
+                        width: 45%;
+                        border-radius: 30px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        padding: 14px 0;
+                        box-sizing: border-box;
+                        border: 2px solid $mengkadji;
+                    }
+                }
+            }
+        }
+
+        .m-business-right {
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    }
+}
+// End Business Starter
+
+
+
+// We Deal With
+.m-we-deal-container {
+    padding: 100px 0;
+
+    .m-we-deal {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 5px;
+            font-size: 40px;
+        }
+
+        h1 {
+            color: $mengkadji;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-weight: bold;
+            color: #e50013a2;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        @keyframes rotateitem {
+            0% {
+                transform: scale(1.05) rotate(0deg);
+            }
+
+            100% {
+                transform: scale(1.05) rotate(360deg);
+            }
+        }
+
+        .m-we-deal-img {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px auto;
+
+            &::before {
+                animation: 2s rotateitem linear infinite;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                background: rgb(229,0,20);
+                background: linear-gradient(90deg, rgba(229,0,20,1) 75%, rgba(250,239,239,1) 75%);
+                border-radius: 50%;
+                z-index: -1;
+                transform: scale(1.1);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+        }
+
+        .m-we-deal-icon {
+            width: 70%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            i {
+                display: block;
+                width: 60px;
+                height: 60px;
+                font-size: 20px;
+                border-radius: 50%;
+                background-color: $smooth;
+                color: $mengkadji;
+                text-align: center;
+                line-height: 60px;
+            }
+        }
+    }
+}
+// End We Deal With
+
+
+
+// Something you need to know
+.m-something-you-container {
+    position: relative;
+    padding: 100px 0;
+    color: #fff;
+
+    &::before {
+        content : '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../../img/digitals.jpg');
+        filter: brightness(35%);
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .m-something-you {
+        width: 70%;
+        margin: auto;
+
+        .m-something-you-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 45px;
+            
+            span {
+                color: $mengkadji;
+            }
+        }
+        
+        .m-something-you-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .issue,  .aboutbrand {
+                width: 45%;
+                border-radius: 10px;
+                box-sizing: border-box;
+                // padding: 0 20px 20px 20px; 
+                overflow: hidden;
+            }
+
+            .triangle {
+                position: relative;
+                padding: 20px 0;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: .3;
+                    z-index: -1;
+                    transform: rotate(180deg);
+                    width: 100%;
+                    background-image:
+                        linear-gradient(to bottom right, transparent 50%, rgb(255, 255, 255) 0),
+                        linear-gradient(to top right, rgb(255, 255, 255) 50%, transparent 0);
+                    background-size: 50% 100%;
+                    background-repeat: no-repeat;
+                    background-position: left, right;
+                }
+            }
+
+            .msy {
+                position: relative;
+                box-sizing: border-box;
+                border: 2px solid rgba(255, 255, 255, 0.493);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: white;
+                    opacity: .1;
+                    z-index: -1;
+                }
+
+                h1 {
+                    color: #fff;
+                    margin-top: 20px;
+                }
+
+                p {
+                    margin-top: 15px;
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                }
+
+                i {
+                    font-size: 35px;
+                    margin-bottom: 10px;
+                }
+
+                text-align: center;
+                
+                .img {
+                    border-top: 4px solid #fff;
+                    padding: 20px 20px 10px 20px;
+                    
+                    img {
+                        box-sizing: border-box;
+                        border: 5px solid rgba(75, 75, 75, 0.267);
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+            }
+
+
+    }
+    }
+}
+// End Something you need to know
+
+
+
+// Solution Business
+.m-solution-container {
+    padding: 100px 0;
+
+    .m-solution {
+        width: 80%;
+        margin: auto;
+        grid-gap: 5%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .solution-left {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .solution-right {
+            h1 {
+                font-size: 50px;
+                margin-bottom: 10px;
+                color: $mengkadji;
+            }
+
+            h2 {
+                letter-spacing: 5px;
+                font-size: 40px;
+                margin-bottom: 40px;
+                color: #464646c7;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 34px;
+                color: #e50013a2;
+            }
+        }
+    }
+}
+// End Solution Business
+
+
+// Our Services
+.m-services-container {
+    padding: 100px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgb(249,56,56);
+        background: linear-gradient(90deg, rgba(255,170,10,1) 0%, rgba(249,56,56,1) 100%);
+        z-index: -1;
+        filter: brightness(85%);
+    }
+
+    .m-services {
+        width: 94%;
+        margin: auto;
+
+        .m-services-header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #fff;
+
+            i {
+                display: block;
+                background-color: $smooth;
+                color: $mengkadji;
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                margin: auto;
+                text-align: center;
+                line-height: 75px;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .m-services-title {
+                font-size: 40px;
+                margin-bottom: 15px;
+
+            
+            }
+
+            p {
+                display: block;
+                width: 50%;
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+
+        .m-services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            .service-list {
+                width: 21%;
+                
+                box-sizing: border-box;
+
+                div {
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 30px 15px;
+                    box-sizing: border-box;
+                }
+
+                h1 {
+                    font-size: 23px;
+                    margin-bottom: 30px;
+                    box-sizing: border-box;
+
+                    i {
+                        font-size: 20px;
+                        color: $mengkadji;
+                        margin-left: 10px;
+                        box-sizing: border-box;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #e50013a2;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+// End Our Services
+
+
+
+
+
+// Responsive Breakpoint
+
+// Large Device
+@media only screen and (min-width: 1800px){ 
+
+}
+
+// Medium Device
+@media only screen and (max-width: 1200px){
+    // Business Starter
+    .m-business-container {
+        position: relative;
+
+        &::before {
+            height: 180px;
+        }
+
+        .m-business {
+            display: grid;
+            grid-template-columns: 1fr .7fr;
+            grid-gap: 5%;
+            width: 80%;
+            margin: auto;
+
+            .m-business-left {
+
+                .still-left {
+                    box-sizing: border-box;
+                    margin-top: 75px;
+
+                    h1 {
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                    }
+
+                    h2 {
+                        margin-bottom: 40px;
+                        font-size: 38px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                    
+                    div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin: 40px 0;
+
+                        a {
+                            display: block;
+                            width: 45%;
+                            font-size: 15px;
+                            padding: 12px 0;
+                        }
+                    }
+                }
+            }
+
+            .m-business-right {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // End Business Starter
+
+
+
+    // We Deal With
+    .m-we-deal-container {
+        padding: 100px 0;
+
+        .m-we-deal {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 5px;
+                font-size: 35px;
+            }
+
+            h1 {
+                font-size: 44px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .m-we-deal-img {
+                width: 135px;
+                height: 135px;
+                margin: 50px auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .m-we-deal-icon {
+                width: 70%;
+                margin: 20px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                i {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    // End We Deal With
+
+
+
+    // Something you need to know
+    .m-something-you-container {
+        position: relative;
+        padding: 100px 0;
+
+        .m-something-you {
+            width: 80%;
+            margin: auto;
+
+            .m-something-you-title {
+                margin-bottom: 50px;
+                font-size: 39px;
+            }
+            
+            .m-something-you-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .issue,  .aboutbrand {
+                    width: 45%;
+                }
+
+                .triangle {
+                    position: relative;
+                    padding: 20px 0;
+                }
+
+                .msy {
+                    position: relative;
+
+                    h1 {
+                        font-size: 22px;
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        margin-bottom: 25px;
+                        font-size: 16px;
+                        padding: 0 20px;
+                    }
+
+                    i {
+                        font-size: 35px;
+                        margin-bottom: 10px;
+                    }
+
+                    text-align: center;
+                    
+                    .img {
+                        padding: 20px 20px 10px 20px;
+                        
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+
+        }
+        }
+    }
+    // End Something you need to know
+
+
+
+    // Solution Business
+    .m-solution-container {
+        padding: 100px 0;
+
+        .m-solution {
+            width: 80%;
+            margin: auto;
+            grid-gap: 5%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+            .solution-left {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .solution-right {
+                h1 {
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                }
+
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 28px;
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+    // End Solution Business
+
+
+    // Our Services
+    .m-services-container {
+        padding: 100px 0;
+        position: relative;
+
+        .m-services {
+            width: 90%;
+            margin: auto;
+
+            .m-services-header {
+                margin-bottom: 50px;
+
+                i {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                }
+
+                .m-services-title {
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    display: block;
+                    width: 50%;
+                    margin: auto;
+                    font-size: 21px;
+                }
+            }
+
+
+            .m-services-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                .service-list {
+                    width: 40%;
+                    margin-bottom: 40px;
+
+                    div {
+                        border-radius: 10px;
+                        padding: 40px 25px;
+                    }
+
+                    h1 {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+
+                        i {
+                            font-size: 20px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    p {
+                        font-size: 17px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    // End Our Services
+}
+
+// Tablet
+@media only screen and (max-width: 900px){
+    .m-container {
+        padding-top: 60px;
+    }
+
+    // Business Starter
+    .m-business-container {
+        position: relative;
+
+        &::before {
+            height: 235px;
+        }
+
+        .m-business {
+            display: block;
+            width: 80%;
+            margin: auto;
+
+            .m-business-left {
+                margin-bottom: 50px;
+
+                .still-left {
+                    box-sizing: border-box;
+                    padding-top: 30px;
+                    margin-top: 0px;
+
+                    h1 {
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                    }
+
+                    h2 {
+                        margin-bottom: 20px;
+                        font-size: 38px;
+                    }
+
+                    p {
+                        color: #fff;
+                        font-size: 19px;
+                    }
+                    
+                    div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin: 80px 0;
+
+                        a {
+                            display: block;
+                            width: 45%;
+                            font-size: 15px;
+                            padding: 12px 0;
+                        }
+                    }
+                }
+            }
+
+            .m-business-right {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // End Business Starter
+
+
+
+    // We Deal With
+    .m-we-deal-container {
+        padding: 100px 0;
+
+        .m-we-deal {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 5px;
+                font-size: 30px;
+            }
+
+            h1 {
+                font-size: 39px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .m-we-deal-img {
+                width: 135px;
+                height: 135px;
+                margin: 50px auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .m-we-deal-icon {
+                width: 70%;
+                margin: 20px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                i {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+    // End We Deal With
+
+
+
+    // Something you need to know
+    .m-something-you-container {
+        position: relative;
+        padding: 100px 0;
+
+        .m-something-you {
+            width: 80%;
+            margin: auto;
+
+            .m-something-you-title {
+                margin-bottom: 50px;
+                font-size: 35px;
+            }
+            
+            .m-something-you-grid {
+                display: block;
+
+                .issue,  .aboutbrand {
+                    width: 80%;
+                    margin: 25px auto;
+                }
+
+                .triangle {
+                    position: relative;
+                    padding: 20px 0;
+                }
+
+                .msy {
+                    position: relative;
+
+                    h1 {
+                        font-size: 22px;
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        margin-bottom: 25px;
+                        font-size: 16px;
+                        padding: 0 20px;
+                    }
+
+                    i {
+                        font-size: 35px;
+                        margin-bottom: 10px;
+                    }
+
+                    text-align: center;
+                    
+                    .img {
+                        padding: 20px 20px 10px 20px;
+                        
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+
+        }
+        }
+    }
+    // End Something you need to know
+
+
+
+    // Solution Business
+    .m-solution-container {
+        padding: 100px 0;
+
+        .m-solution {
+            width: 80%;
+            margin: auto;
+            grid-gap: 10%;
+            display: block;
+
+            .solution-left {
+                margin-bottom: 50px;
+                margin: 50px auto;
+                width: 75%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .solution-right {
+                text-align: center;
+
+                h1 {
+                    font-size: 31px;
+                    margin-bottom: 10px;
+                }
+
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 25px;
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    font-size: 15px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+    // End Solution Business
+
+
+    // Our Services
+    .m-services-container {
+        padding: 100px 0;
+        position: relative;
+
+        .m-services {
+            width: 90%;
+            margin: auto;
+
+            .m-services-header {
+                margin-bottom: 50px;
+
+                i {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                }
+
+                .m-services-title {
+                    font-size: 32px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    display: block;
+                    width: 50%;
+                    margin: auto;
+                    font-size: 21px;
+                }
+            }
+
+
+            .m-services-grid {
+                display: block;
+
+                .service-list {
+                    width: 80%;
+                    margin: 40px auto;
+
+                    div {
+                        border-radius: 10px;
+                        padding: 40px 25px;
+                    }
+
+                    h1 {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+
+                        i {
+                            font-size: 20px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    p {
+                        font-size: 17px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    // End Our Services
+}
+
+// Mobile ( Primary )
+@media only screen and (max-width: 600px) 
+{
+    // Business Starter
+    .m-business-container {
+        position: relative;
+
+        &::before {
+            height: 255px;
+        }
+
+        .m-business {
+            display: block;
+            width: 80%;
+            margin: auto;
+
+            .m-business-left {
+                margin-bottom: 50px;
+
+                .still-left {
+                    box-sizing: border-box;
+                    padding-top: 30px;
+                    margin-top: 0px;
+
+                    h1 {
+                        margin-bottom: 15px;
+                        font-size: 22px;
+                    }
+
+                    h2 {
+                        margin-bottom: 20px;
+                        font-size: 35px;
+                    }
+
+                    p {
+                        color: #fff;
+                        font-size: 17px;
+                    }
+                    
+                    div {
+                        display: block;
+                        margin: 100px 0;
+
+                        a {
+                            display: block;
+                            width: 75%;
+                            font-size: 15px;
+                            padding: 12px 0;
+                            margin: 30px auto;
+                        }
+                    }
+                }
+            }
+
+            .m-business-right {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // End Business Starter
+
+
+
+    // We Deal With
+    .m-we-deal-container {
+        padding: 100px 0;
+
+        .m-we-deal {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+
+            h2 {
+                margin-bottom: 5px;
+                font-size: 25px;
+            }
+
+            h1 {
+                font-size: 33px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+
+            .m-we-deal-img {
+                width: 110px;
+                height: 110px;
+                margin: 50px auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .m-we-deal-icon {
+                width: 90%;
+                margin: 20px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                i {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 17px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    // End We Deal With
+
+
+
+    // Something you need to know
+    .m-something-you-container {
+        position: relative;
+        padding: 100px 0;
+
+        .m-something-you {
+            width: 80%;
+            margin: auto;
+
+            .m-something-you-title {
+                margin-bottom: 50px;
+                font-size: 26px;
+            }
+            
+            .m-something-you-grid {
+                display: block;
+
+                .issue,  .aboutbrand {
+                    width: 90%;
+                    margin: 40px auto;
+                }
+
+                .triangle {
+                    position: relative;
+                    padding: 20px 0;
+                }
+
+                .msy {
+                    position: relative;
+
+                    h1 {
+                        font-size: 22px;
+                        margin-top: 20px;
+                    }
+
+                    p {
+                        margin-top: 15px;
+                        margin-bottom: 25px;
+                        font-size: 16px;
+                        padding: 0 20px;
+                    }
+
+                    i {
+                        font-size: 35px;
+                        margin-bottom: 10px;
+                    }
+
+                    text-align: center;
+                    
+                    .img {
+                        padding: 20px 20px 10px 20px;
+                        
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+
+        }
+        }
+    }
+    // End Something you need to know
+
+
+
+    // Solution Business
+    .m-solution-container {
+        padding: 100px 0;
+
+        .m-solution {
+            width: 80%;
+            margin: auto;
+            display: block;
+
+            .solution-left {
+                margin-bottom: 50px;
+                margin: 50px auto;
+                width: 80%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .solution-right {
+                text-align: center;
+
+                h1 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+
+                h2 {
+                    letter-spacing: 2px;
+                    font-size: 23px;
+                    margin-bottom: 40px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 31px;
+                }
+            }
+        }
+    }
+    // End Solution Business
+
+
+    // Our Services
+    .m-services-container {
+        padding: 100px 0;
+        position: relative;
+
+        .m-services {
+            width: 90%;
+            margin: auto;
+
+            .m-services-header {
+                margin-bottom: 50px;
+
+                i {
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                }
+
+                .m-services-title {
+                    font-size: 29px;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    display: block;
+                    width: 80%;
+                    margin: auto;
+                    font-size: 19px;
+                }
+            }
+
+
+            .m-services-grid {
+                display: block;
+
+                .service-list {
+                    width: 90%;
+                    margin: 40px auto;
+
+                    div {
+                        border-radius: 10px;
+                        padding: 30px 25px;
+                    }
+
+                    h1 {
+                        font-size: 19px;
+                        margin-bottom: 30px;
+
+                        i {
+                            font-size: 18px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    // End Our Services
+}
