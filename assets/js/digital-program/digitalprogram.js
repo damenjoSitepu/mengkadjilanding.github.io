@@ -29,7 +29,7 @@ $(document).ready(function () {
 
     ScrollReveal().reveal('.left-side small', {
         delay: 500,
-        origin: 'left'
+        origin: 'top'
     });
 
     ScrollReveal().reveal('.left-side a', {
@@ -63,7 +63,12 @@ $(document).ready(function () {
 
     ScrollReveal().reveal('.right-sides', {
         delay: 500,
-        origin: 'right'
+        origin: 'top'
+    });
+
+    ScrollReveal().reveal('.left-side-protocol img', {
+        delay: 500,
+        origin: 'top'
     });
 
     // Speaker
@@ -103,12 +108,12 @@ $(document).ready(function () {
     // Limit
     ScrollReveal().reveal('.m-limit-container h1', {
         delay: 250,
-        origin: 'left'
+        origin: 'top'
     });
 
     ScrollReveal().reveal('.m-limit-container h2', {
         delay: 600,
-        origin: 'right'
+        origin: 'bottom'
     });
 
     // Feedback
@@ -123,9 +128,9 @@ $(document).ready(function () {
         let origin = '';
 
         if (i % 2 != 0) {
-            origin = 'left';
+            origin = 'bottom';
         } else {
-            origin = 'right';
+            origin = 'top';
         }
 
         ScrollReveal().reveal($(this), {
