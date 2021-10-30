@@ -1,0 +1,1650 @@
+$mengkadji : #E50014;
+$defaultColor : rgb(221, 221, 221);
+$smooth: rgb(250, 239, 239);
+
+.m-container {
+  padding-top: 80px;
+}
+
+
+// Social Starter
+.m-social-starter-container {
+    position: relative;
+    height: calc(100vh - 80px);
+
+    &::after {
+        animation: gradient 15s ease infinite;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        // background-size: 400% 400%;
+        // background: rgb(0,0,0);
+        // background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(208,208,208,1) 100%);
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        opacity: .1;
+        z-index: -1;
+    }
+
+    .m-social-video { 
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: -2;
+        filter: brightness(30%);
+        object-fit: cover;
+        height: calc(100vh - 80px);
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .m-social-starter {
+        width: 45%;
+        margin: auto;
+        padding-top: 50px;
+        text-align: center;
+        color: #fff;
+
+        h2 {
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 35px;
+        }
+        
+        p {
+            display: block;
+            font-size: 20px;
+            line-height: 34px;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 40px;
+
+            a {
+                display: block;
+                text-align: center;
+                border-radius: 30px;
+                border: 2px solid #fff;
+                color: #fff;
+                font-size: 20px;
+                width: 40%; 
+                padding: 10px 0;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// End Social Starter
+
+
+// Date Events
+.m-date-events-container {
+    padding: 100px 0;
+    box-sizing: border-box;
+
+    .m-date-events {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+
+        .m-date-events-header {
+            margin-bottom: 50px;
+
+            div {
+                width: 20%;
+                margin: 25px auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                i {
+                    color: $mengkadji;
+                    background-color: $smooth;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 20px;
+                }
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 30px;
+                color: #e50013a2;
+            }
+        }
+
+        .m-date-events-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+
+            i {
+                font-size: 145px;
+                transform: translate(13%,0);
+                color: $mengkadji;
+            }
+
+            h1 {
+                letter-spacing: 3px;
+                align-self: center;
+                box-sizing: border-box;
+                text-align: center;
+                display: block;
+                width: 100%;
+                font-size: 22px;
+                padding: 15px 0;
+                background-color: #fff;
+                box-shadow: 2px 2px 20px rgba(161, 161, 161, 0.479) ;
+                border-radius: 20px;
+                transform: translate(-13%,0);
+                color: $mengkadji;
+            }
+        }
+    }
+}
+// End Date Events
+
+
+
+// Appreciate To
+.m-appreciate-container {
+    padding: 100px 0 0 0;
+    box-sizing: border-box;
+    position: relative;
+
+    .m-appreciate-dec {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 8px;
+        background: rgb(255,0,0);
+        background: linear-gradient(90deg, rgba(255,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,6,0,1) 75%);
+    }
+
+    &::after {
+        background: url('../../img/fireworks.jpg');
+        background-size: cover;
+        background-position: bottom center;
+        filter: brightness(50%);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: -2;
+        // opacity: .4;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        z-index: -1;
+        background: rgb(255,0,0);
+        background: linear-gradient(90deg, rgba(255,0,0,1) 25%, rgba(255,98,0,0.48783263305322133) 75%);
+        opacity: .2;
+    }
+
+
+    .m-appreciate {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .m-appreciate-logo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            padding: 50px 0 30px 0;
+            background-color: $smooth;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+// End Appreciate To
+
+
+// Social Issue
+.m-social-issue-container {
+    padding: 100px 0;
+    box-sizing: border-box;
+    
+    .m-social-issue {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+
+        .m-social-issue-title {
+            font-size: 55px;
+            margin-bottom: 25px;
+
+            span {
+                color: $mengkadji;
+            }
+        }
+
+        .m-social-issue-content {
+       
+            margin: auto;
+            font-size: 27px;
+            text-align: center;
+            line-height: 40px;
+            color: #e50013a2;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 25px;
+            position: relative;
+            box-sizing: border-box;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 7px;
+                border-radius: 5px;
+                background-color: $mengkadji;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 20%;
+                right: 20%;
+                height: 8px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                transform: translate(0,8px);
+                background-color: $mengkadji;
+            }
+        }   
+
+        .m-social-issue-img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 70px;
+
+            div {
+                position: relative;
+                width: 160px;
+                height: 160px;
+
+                &::before {
+                    animation: 3s rotateitem linear infinite;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    background: rgba(119, 119, 119, 0.479);
+                    background: linear-gradient(90deg, rgba(119, 119, 119, 0.5) 75%, rgba(250,239,239,1) 75%);
+                    border-radius: 50%;
+                    z-index: -1;
+                    transform: scale(1.05) rotate(-90deg);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+            }
+        }
+
+        @keyframes rotateitem {
+            0% {
+                transform: scale(1.05) rotate(-90deg);
+            }
+
+            25% {
+                transform: scale(1.05) rotate(-150deg);
+            }
+
+            50% {
+                transform: scale(1.05) rotate(-90deg);
+            }
+
+            75% {
+                transform: scale(1.05) rotate(-30deg);
+            }
+
+            100% {
+                transform: scale(1.05) rotate(-90deg);
+            }
+        }
+    }
+}
+// End Social Issue
+
+// Social Description
+.m-social-description-container {
+    padding: 100px 0;
+    box-sizing: border-box;
+    position: relative;
+
+    .m-social-description-container-bg {
+        position: absolute;
+        top:0 ;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        filter: brightness(35%);
+    }
+
+    .m-social-description {
+        width: 80%;
+        margin: auto;
+        color: #fff;
+
+        .m-social-description-title {
+            text-align: center;
+            margin-bottom: 45px;
+            font-size: 50px;
+
+            span {
+                color: $mengkadji;
+            }
+        }
+        
+        .m-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10%;
+
+            .left-side {
+                p {
+                    line-height: 30px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .right-side {
+                .m-ann-modal {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.719);
+                    opacity: 1;
+                    z-index: 12000;
+    
+                    .m-ann-modal-content {
+                        position: relative;
+                        width: 500px;
+                        margin: 80px auto;
+    
+                        img {
+                            border-radius: 10px;
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 80vh;
+                            object-fit: cover;
+                        }
+                    }
+                }
+    
+    
+                .left-side-protocol {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    
+                    
+                    &:hover .img-hover {
+                        transition: .3s ease;
+                        cursor: pointer;
+                        opacity: 1;
+                    }
+                    
+                    
+                    .img-hover {
+                        transition: .3s ease;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        z-index: 1;
+                       
+                        color: #fff;
+                        display: flex;
+    
+                        .circle {
+                            margin: auto;
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            border: 3px solid #fff;
+                            display: flex;
+    
+                            i {
+                                margin: auto;
+                                font-size: 30px;
+                            }
+                        }
+    
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            border-radius: 10px;
+                            background-color: rgb(44, 44, 44);
+                            z-index: -1;
+                            opacity: .3;
+                        }
+                    }    
+    
+                    img {
+                        border-radius: 10px;
+                        height: auto;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Social Description
+
+
+// Documentation
+.m-documentation-container {
+    padding: 100px 0;
+    box-sizing: border-box;
+
+    .m-documentation-title {
+        font-size: 50px;
+        text-align: center;
+        color: $mengkadji;
+    }
+
+    .m-documentation {
+        width: 80%;
+        margin: auto;
+
+        .m-documentation-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 60px;
+
+            .list {
+                width: 28%;
+                margin-bottom: 50px;
+
+                h1 {
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    color: $mengkadji;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                }
+
+                p {
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    color: rgb(31, 31, 31);
+                    font-weight: bold;
+                    line-height: 28px;
+                }
+
+                div {
+                    position: relative;
+                    width: 100%;
+                    height: 170px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background: rgb(0,0,0);
+                        background: linear-gradient(180deg, rgba(0,0,0,0) 75%, rgba(255,255,255,1) 100%);
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        object-fit: cover;
+                        object-position: center center;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Documentation
+
+
+
+
+// Responsive Breakpoint
+
+// Large Device
+@media only screen and (min-width: 1800px){ 
+
+}
+
+// Medium Device
+@media only screen and (max-width: 1200px){
+    // Social Starter
+    .m-social-starter-container {
+        position: relative;
+        height: calc(100vh - 80px);
+
+        .m-social-video { 
+            height: calc(100vh - 80px);
+        }
+
+        .m-social-starter {
+            width: 60%;
+            margin: auto;
+            padding-top: 50px;
+
+            h2 {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 35px;
+            }
+            
+            p {
+                font-size: 20px;
+                line-height: 34px;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 40px;
+
+                a {
+                    border-radius: 30px;
+                    font-size: 18px;
+                    width: 40%; 
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+    // End Social Starter
+
+
+    // Date Events
+    .m-date-events-container {
+        padding: 100px 0;
+
+        .m-date-events {
+            width: 60%;
+            margin: auto;
+
+            .m-date-events-header {
+                margin-bottom: 50px;
+
+                div {
+                    width: 30%;
+                    margin: 25px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    i {
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        font-size: 18px;
+                    }
+                }
+
+                h1 {
+                    font-size: 44px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 26px;
+                }
+            }
+
+            .m-date-events-content {
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+
+                i {
+                    font-size: 125px;
+                    transform: translate(13%,0);
+                }
+
+                h1 {
+                    letter-spacing: 2px;
+                    align-self: center;
+                    width: 100%;
+                    font-size: 18px;
+                    padding: 12px 0;
+                    transform: translate(-14%,0);
+                }
+            }
+        }
+    }
+    // End Date Events
+
+
+
+    // Appreciate To
+    .m-appreciate-container {
+        padding: 100px 0 0 0;
+
+        .m-appreciate {
+            width: 75%;
+            margin: auto;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .m-appreciate-logo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                padding: 40px 0 25px 0;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+    // End Appreciate To
+
+
+    // Social Issue
+    .m-social-issue-container {
+        padding: 100px 0;
+        
+        .m-social-issue {
+            width: 70%;
+            margin: auto;
+
+            .m-social-issue-title {
+                font-size: 45px;
+                margin-bottom: 25px;
+            }
+
+            .m-social-issue-content {
+        
+                margin: auto;
+                font-size: 23px;
+                line-height: 35px;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 25px;
+
+                &::before {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 7px;
+                }
+
+                &::after {
+                    bottom: 0;
+                    left: 20%;
+                    right: 20%;
+                    height: 8px;
+                }
+            }   
+
+            .m-social-issue-img {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 70px;
+
+                div {
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+    // End Social Issue
+
+    // Social Description
+    .m-social-description-container {
+        padding: 100px 0;
+
+        .m-social-description {
+            width: 80%;
+            margin: auto;
+
+            .m-social-description-title {
+                margin-bottom: 45px;
+                font-size: 40px;
+            }
+            
+            .m-grid {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-gap: 10%;
+
+                .left-side {
+                    p {
+                        line-height: 30px;
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .right-side {
+                    .m-ann-modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 1;
+                        z-index: 12000;
+        
+                        .m-ann-modal-content {
+                            width: 500px;
+                            margin: 80px auto;
+        
+                            img {
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 80vh;
+                            }
+                        }
+                    }
+        
+        
+                    .left-side-protocol {
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+                        
+                        
+                        &:hover .img-hover {
+                            transition: .3s ease;
+                            cursor: pointer;
+                            opacity: 1;
+                        }
+                        
+                        
+                        .img-hover {
+                            transition: .3s ease;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            opacity: 0;
+                            z-index: 1;
+                        
+                            display: flex;
+        
+                            .circle {
+                                margin: auto;
+                                width: 60px;
+                                height: 60px;
+                                display: flex;
+        
+                                i {
+                                    margin: auto;
+                                    font-size: 30px;
+                                }
+                            }
+                        }    
+        
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Social Description
+
+
+    // Documentation
+    .m-documentation-container {
+        padding: 100px 0;
+
+        .m-documentation-title {
+            font-size: 40px;
+        }
+
+        .m-documentation {
+            width: 90%;
+            margin: auto;
+
+            .m-documentation-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 60px;
+
+                .list {
+                    width: 45%;
+                    margin-bottom: 50px;
+
+                    h1 {
+                        padding: 0 15px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: 170px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Documentation
+}
+
+// Tablet
+@media only screen and (max-width: 900px){
+    // Social Starter
+    .m-social-starter-container {
+        position: relative;
+        height: calc(100vh - 80px);
+
+        .m-social-video { 
+            height: calc(100vh - 80px);
+        }
+
+        .m-social-starter {
+            width: 80%;
+            margin: auto;
+            padding-top: 50px;
+
+            h2 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+
+            h1 {
+                font-size: 28px;
+                margin-bottom: 31px;
+            }
+            
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 40px;
+
+                a {
+                    border-radius: 30px;
+                    font-size: 16px;
+                    width: 40%; 
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+    // End Social Starter
+
+
+    // Date Events
+    .m-date-events-container {
+        padding: 100px 0;
+
+        .m-date-events {
+            width: 80%;
+            margin: auto;
+
+            .m-date-events-header {
+                margin-bottom: 50px;
+
+                div {
+                    width: 30%;
+                    margin: 25px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    i {
+                        width: 37px;
+                        height: 37px;
+                        line-height: 37px;
+                        font-size: 15px;
+                    }
+                }
+
+                h1 {
+                    font-size: 36px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 23px;
+                }
+            }
+
+            .m-date-events-content {
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+
+                i {
+                    font-size: 105px;
+                    transform: translate(14%,0);
+                }
+
+                h1 {
+                    letter-spacing: 2px;
+                    align-self: center;
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 12px 0;
+                    transform: translate(-14%,0);
+                }
+            }
+        }
+    }
+    // End Date Events
+
+
+
+    // Appreciate To
+    .m-appreciate-container {
+        padding: 100px 0 0 0;
+
+        .m-appreciate {
+            width: 80%;
+            margin: auto;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .m-appreciate-logo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                padding: 25px 0 15px 0;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    // End Appreciate To
+
+
+    // Social Issue
+    .m-social-issue-container {
+        padding: 100px 0;
+        
+        .m-social-issue {
+            width: 80%;
+            margin: auto;
+
+            .m-social-issue-title {
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+
+            .m-social-issue-content {
+        
+                margin: auto;
+                font-size: 20px;
+                line-height: 30px;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 25px;
+
+                &::before {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 5px;
+                }
+
+                &::after {
+                    bottom: 0;
+                    left: 20%;
+                    right: 20%;
+                    height: 8px;
+                }
+            }   
+
+            .m-social-issue-img {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 70px;
+
+                div {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+    // End Social Issue
+
+    // Social Description
+    .m-social-description-container {
+        padding: 100px 0;
+
+        .m-social-description {
+            width: 80%;
+            margin: auto;
+
+            .m-social-description-title {
+                margin-bottom: 45px;
+                font-size: 40px;
+            }
+            
+            .m-grid {
+                display: block;
+
+                .left-side {
+                    margin-bottom: 50px;
+
+                    p {
+                        line-height: 30px;
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .right-side {
+                    .m-ann-modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 1;
+                        z-index: 12000;
+        
+                        .m-ann-modal-content {
+                            width: 500px;
+                            margin: 80px auto;
+        
+                            img {
+                                position: absolute;
+                                top: 0;
+                                width: 100%;
+                                height: 80vh;
+                            }
+                        }
+                    }
+        
+        
+                    .left-side-protocol {
+                        position: relative;
+                        width: 50%;
+                        margin: auto;
+                        height: auto;
+                        
+                        
+                        &:hover .img-hover {
+                            transition: .3s ease;
+                            cursor: pointer;
+                            opacity: 1;
+                        }
+                        
+                        
+                        .img-hover {
+                            transition: .3s ease;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            opacity: 0;
+                            z-index: 1;
+                        
+                            display: flex;
+        
+                            .circle {
+                                margin: auto;
+                                width: 60px;
+                                height: 60px;
+                                display: flex;
+        
+                                i {
+                                    margin: auto;
+                                    font-size: 30px;
+                                }
+                            }
+                        }    
+        
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Social Description
+
+
+    // Documentation
+    .m-documentation-container {
+        padding: 100px 0;
+
+        .m-documentation-title {
+            font-size: 35px;
+        }
+
+        .m-documentation {
+            width: 90%;
+            margin: auto;
+
+            .m-documentation-list {
+                display: block;
+                margin-top: 60px;
+
+                .list {
+                    width: 90%;
+                    margin: 50px auto;
+
+                    h1 {
+                        padding: 0 15px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 24px;
+                    }
+
+                    p {
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: 170px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Documentation
+}
+
+// Mobile ( Primary )
+@media only screen and (max-width: 600px) 
+{
+    .m-container {
+        padding-top: 60px;
+    }
+
+    // Social Starter
+    .m-social-starter-container {
+        position: relative;
+        height: calc(100vh - 60px);
+
+        .m-social-video { 
+            height: calc(100vh - 60px);
+        }
+
+        .m-social-starter {
+            width: 90%;
+            margin: auto;
+            padding-top: 50px;
+
+            h2 {
+                font-size: 19px;
+                margin-bottom: 18px;
+            }
+
+            h1 {
+                font-size: 23px;
+                margin-bottom: 31px;
+            }
+            
+            p {
+                font-size: 15px;
+                line-height: 28px;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 40px;
+
+                a {
+                    border-radius: 30px;
+                    font-size: 14px;
+                    width: 40%; 
+                    padding: 6px 0;
+                }
+            }
+        }
+    }
+    // End Social Starter
+
+
+    // Date Events
+    .m-date-events-container {
+        padding: 100px 0;
+
+        .m-date-events {
+            width: 90%;
+            margin: auto;
+
+            .m-date-events-header {
+                margin-bottom: 50px;
+
+                div {
+                    width: 40%;
+                    margin: 25px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    i {
+                        width: 37px;
+                        height: 37px;
+                        line-height: 37px;
+                        font-size: 15px;
+                    }
+                }
+
+                h1 {
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .m-date-events-content {
+                display: block;
+
+                i {
+                    font-size: 80px;
+                    transform: translate(0,0);
+                }
+
+                h1 {
+                    display: block;
+                    margin: 10px auto;
+                    letter-spacing: 2px;
+                    align-self: center;
+                    width: 100%;
+                    font-size: 13px;
+                    padding: 12px 0;
+                    transform: translate(0,0);
+                }
+            }
+        }
+    }
+    // End Date Events
+
+
+
+    // Appreciate To
+    .m-appreciate-container {
+        padding: 100px 0 0 0;
+
+        .m-appreciate {
+            width: 100%;
+            margin: auto;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .m-appreciate-logo {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                padding: 25px 0 15px 0;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                background-color: #fff;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    // End Appreciate To
+
+
+    // Social Issue
+    .m-social-issue-container {
+        padding: 100px 0;
+        
+        .m-social-issue {
+            width: 90%;
+            margin: auto;
+
+            .m-social-issue-title {
+                font-size: 35px;
+                margin-bottom: 25px;
+            }
+
+            .m-social-issue-content {
+        
+                margin: auto;
+                font-size: 17px;
+                line-height: 30px;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 25px;
+
+                &::before {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 5px;
+                }
+
+                &::after {
+                    bottom: 0;
+                    left: 20%;
+                    right: 20%;
+                    height: 8px;
+                }
+            }   
+
+            .m-social-issue-img {
+                display: block;
+                margin-top: 70px;
+
+                div {
+                    margin: 50px auto;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    // End Social Issue
+
+    // Social Description
+    .m-social-description-container {
+        padding: 100px 0;
+
+        .m-social-description {
+            width: 90%;
+            margin: auto;
+
+            .m-social-description-title {
+                margin-bottom: 45px;
+                font-size: 35px;
+            }
+            
+            .m-grid {
+                display: block;
+
+                .left-side {
+                    margin-bottom: 50px;
+
+                    p {
+                        line-height: 30px;
+                        font-size: 15px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .right-side {
+                    .m-ann-modal {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        opacity: 1;
+                        z-index: 12000;
+
+                        .m-ann-modal-content {
+                            width: 90%;
+                            height: 60vh;
+                            margin: 60px auto;
+    
+                            img {
+                                border-radius: 10px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+        
+        
+                    .left-side-protocol {
+                        position: relative;
+                        width: 40%;
+                        margin: auto;
+                        height: auto;
+                        
+                        
+                        &:hover .img-hover {
+                            transition: .3s ease;
+                            cursor: pointer;
+                            opacity: 1;
+                        }
+                        
+                        
+                        .img-hover {
+                            transition: .3s ease;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            opacity: 0;
+                            z-index: 1;
+                        
+                            display: flex;
+        
+                            .circle {
+                                margin: auto;
+                                width: 60px;
+                                height: 60px;
+                                display: flex;
+        
+                                i {
+                                    margin: auto;
+                                    font-size: 30px;
+                                }
+                            }
+                        }    
+        
+                        img {
+                            height: auto;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Social Description
+
+
+    // Documentation
+    .m-documentation-container {
+        padding: 100px 0;
+
+        .m-documentation-title {
+            font-size: 30px;
+        }
+
+        .m-documentation {
+            width: 90%;
+            margin: auto;
+
+            .m-documentation-list {
+                display: block;
+                margin-top: 60px;
+
+                .list {
+                    width: 90%;
+                    margin: 50px auto;
+
+                    h1 {
+                        padding: 0 15px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        padding: 0 15px;
+                        box-sizing: border-box;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+
+                    div {
+                        width: 100%;
+                        height: 170px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Documentation
+}
