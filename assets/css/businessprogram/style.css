@@ -17,6 +17,8 @@
   background: #f93838;
   background: -webkit-gradient(linear, left top, right top, from(#f93838), to(#ffaa0a));
   background: linear-gradient(90deg, #f93838 0%, #ffaa0a 100%);
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 
 .m-business-container .m-business {
@@ -127,23 +129,47 @@
 
 @-webkit-keyframes rotateitem {
   0% {
-    -webkit-transform: scale(1.05) rotate(0deg);
-            transform: scale(1.05) rotate(0deg);
+    -webkit-transform: scale(1.08) rotate(-90deg);
+            transform: scale(1.08) rotate(-90deg);
+  }
+  25% {
+    -webkit-transform: scale(1.08) rotate(-120deg);
+            transform: scale(1.08) rotate(-120deg);
+  }
+  50% {
+    -webkit-transform: scale(1.08) rotate(-90deg);
+            transform: scale(1.08) rotate(-90deg);
+  }
+  75% {
+    -webkit-transform: scale(1.08) rotate(-60deg);
+            transform: scale(1.08) rotate(-60deg);
   }
   100% {
-    -webkit-transform: scale(1.05) rotate(360deg);
-            transform: scale(1.05) rotate(360deg);
+    -webkit-transform: scale(1.08) rotate(-90deg);
+            transform: scale(1.08) rotate(-90deg);
   }
 }
 
 @keyframes rotateitem {
   0% {
-    -webkit-transform: scale(1.05) rotate(0deg);
-            transform: scale(1.05) rotate(0deg);
+    -webkit-transform: scale(1.08) rotate(-90deg);
+            transform: scale(1.08) rotate(-90deg);
+  }
+  25% {
+    -webkit-transform: scale(1.08) rotate(-120deg);
+            transform: scale(1.08) rotate(-120deg);
+  }
+  50% {
+    -webkit-transform: scale(1.08) rotate(-90deg);
+            transform: scale(1.08) rotate(-90deg);
+  }
+  75% {
+    -webkit-transform: scale(1.08) rotate(-60deg);
+            transform: scale(1.08) rotate(-60deg);
   }
   100% {
-    -webkit-transform: scale(1.05) rotate(360deg);
-            transform: scale(1.05) rotate(360deg);
+    -webkit-transform: scale(1.08) rotate(-90deg);
+            transform: scale(1.08) rotate(-90deg);
   }
 }
 
@@ -169,8 +195,8 @@
   background: linear-gradient(90deg, #e50014 75%, #faefef 75%);
   border-radius: 50%;
   z-index: -1;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.08) rotate(-90deg);
+          transform: scale(1.08) rotate(-90deg);
 }
 
 .m-we-deal-container .m-we-deal .m-we-deal-img img {
